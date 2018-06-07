@@ -1,0 +1,74 @@
+.dynamic-form {
+    box-shadow: 2px 6px 8px grey;
+    padding: 20px 20px; 
+    margin: 20px 20px;
+    max-width: 600px;
+    border: 2px solid  black;
+}
+.dynamic-form .form-group {
+    padding: .5em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.dynamic-form .form-label {
+    text-align: left;
+    color:black;
+    font-size: 20px;
+}
+.dynamic-form .form-input{
+    margin-top: 5px;
+    line-height: 20px;
+}
+/* 
+.dynamic-form select{
+    margin-top: 5px;
+    line-height: 1.5em;
+} */
+
+.dynamic-form .form-group button{
+    padding: 50px;
+}
+
+.dynamic-form .form-group-radio {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-group-radio label {
+}
+
+.form-group-radio input {
+
+}
+
+.dynamic-form .form-group-checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-group-checkbox label {
+}
+
+.form-group-checkbox input {
+
+}
+
+.form-title {
+    text-align: left;
+}
+
+.form-actions {
+    display: flex;
+}
+.form-actions button {
+        color:fuchsia;
+        text-align: center;
+        padding: 10px 40px;
+        background-color:black;
+        font-size: 20px;
+        margin-left:5px;
+ }

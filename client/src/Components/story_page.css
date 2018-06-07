@@ -1,0 +1,24 @@
+.storyimage1{
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width:Auto;
+    height:350px;
+    }
+    
+.story{
+    text-align:justify;
+    width: auto;
+    /* border: 5px solid fuchsia; */
+    margin:0px 100px;
+    padding:0px 20px;
+    font-size:20px;  
+}
+@media screen and (max-width: 1200px) {
+    .story {
+        margin:0px 0px;
+        padding:0px 20px;
+        font-size:15px;  
+      }
+  }  
