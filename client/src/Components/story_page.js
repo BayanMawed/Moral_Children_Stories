@@ -2,7 +2,7 @@ import React from 'react'
 import './story_page.css'
 import Page from './header_navbar_without_search.js'
 // import { Link } from 'react-router-dom'
-import Form from './story_comment_form.js'
+import Comment from './story_comment_form.js'
 
 const StoryPage = ({loading,title,description,headerImage,image1,image2,image3}) =>
     <Page title={title}  mainClassName="storypage" headerImage={headerImage}>
@@ -12,7 +12,7 @@ const StoryPage = ({loading,title,description,headerImage,image1,image2,image3})
         <div className="row">
             {/* <div className="column"> */}
             <div className="story">
-                <h3>{description}</h3> 
+                <h4>{description}</h4> 
                 {/* </div> */}
             </div>
             {/* <div className="column"> */}
@@ -21,7 +21,17 @@ const StoryPage = ({loading,title,description,headerImage,image1,image2,image3})
                 <div className="storyimage3" style={{backgroundImage:`url(images/`+image3+`)`}}></div> */} 
             </div>
         {/* </div> */}
-      <Form/>
+        <h4> Add your comment down please.</h4> 
+         <div className="row">
+            <div className="column">
+                <Comment/>
+            </div>
+            <div className="column">
+                <div className="storycomment">
+                </div>
+            </div>
+        </div> 
+     
     </Page>
 
 export default StoryPage

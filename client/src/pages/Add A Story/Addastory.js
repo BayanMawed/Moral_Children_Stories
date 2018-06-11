@@ -56,8 +56,8 @@ export default class Test extends React.Component {
     render() {
         return (
             <Page title="Add a Story" mainClassName="add" headerImage="images/happyfamily.png">
-                <h1>Add A Story</h1>
-                <h2> If you have a new children's story about any value you like to share it with us, you can send it and we will publish it in our website</h2>
+                <h2>Add A Story</h2>
+                <h4> If you have a new children's story about any value you like to share it with us, you can send it and we will publish it in our website</h4>
                 <div className="row">
                     <div className="column">
                         <form onSubmit={this.handleSubmit}>
@@ -73,7 +73,7 @@ export default class Test extends React.Component {
                         </form>
                     </div>
                     <div className="column">
-                        <div className="img1">
+                        <div className="addastory">
                         </div>
                     </div>
                 </div>

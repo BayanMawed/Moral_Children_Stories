@@ -36,8 +36,8 @@ const Value = ({ image, link, name, text }) => (
         <div className="content">
             <div className="img" style={{backgroundImage:`url("/images/home/${image}")`}}></div>
             <Link to={`Category/`+name} id="a">{name} Stories</Link>
-            <h5>{name}</h5>
-            <p>{text}</p>
+            <h3>{name}</h3>
+            <h3>{text}</h3>
         </div>
     </div>
 )
@@ -78,8 +78,8 @@ export class Home extends React.Component {
         return(
 
             <Page search={this.state.search} onChange={this.onChange} title="home" mainClassName="home" headerImage="images/happyfamily.png">
-                <h2>Teaching your children moral values is the process by which you help them develop their moral compasses. The morals your children learn as kids will affect how they see the world and behave as adults. While it may seem impossible to explain the importance of honesty or compassion to a child, showing your children how good morals affect others by telling them stories can have a great influence on them. As a parent, it's your duty to teach morals to children to help transform them into functional adults in society.</h2>
-                <h2> Do you want to teach your children values? Below, you will find stories to teach them about many values...</h2>
+                <h4>Teaching your children moral values is the process by which you help them develop their moral compasses. The morals your children learn as kids will affect how they see the world and behave as adults. While it may seem impossible to explain the importance of honesty or compassion to a child, showing your children how good morals affect others by telling them stories can have a great influence on them. As a parent, it's your duty to teach morals to children to help transform them into functional adults in society.</h4>
+                <h4> Do you want to teach your children values? Below, you will find stories to teach them about many values...</h4>
                 <div className="row">
                 {/* <h1>{filter}</h1> */}
                 {  filteredValues.map(value => <Value {...value} /> )}

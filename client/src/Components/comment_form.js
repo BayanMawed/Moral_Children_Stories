@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import IndexForm from './index_comment_form.js';
 
-class comments extends Component {
+class Comment extends Component {
   state = {
     data: [
       {id:"id",name:"Name", age:"Age",rating:" Rating",comment:"Comment"},
-    
+      {id:"id",name:"Nttame", age:"Atge",rating:" Ratting",comment:"Commtent"},
     ],
     current: {}
   }
@@ -33,8 +33,8 @@ class comments extends Component {
   render() {
     let data = this.state.data.map((d) => {
       return (
-        <tr key={d.id}>
-            <td>{d.name}</td>
+        <tr key={d.id} id='field'>
+            <td >{d.name}</td>
             <td>{d.age}</td>
             <td>{d.rating}</td>
             <td>{d.comment}</td>
@@ -46,25 +46,24 @@ class comments extends Component {
     return (
       <div className="App">
         <IndexForm className="form"
-          // title = "Add your comment about this story"
+          // title = "Add your comment down please"
           defaultValues = {this.state.current}
           model={[
-            {key: "name", label: "Name", props: {required: true}},
+            {key: "name", label: "Full Name", props: {required: true}},
             {key: "age",label: "Age", type: "number"},
-            {key: "rating",label: "Your Rating for the website", type: "number", props:{min:0,max:5}},
+            {key: "rating",label: "Your Rating for the website", type: "number", props:{min:0,max:5,required: true}},
             {key: "comment",label: "Your Comment"},
             ]}
           
           onSubmit = {(model) => {this.onSubmit(model)}} 
         />
 
-        <table border="6">
+        <table border="1">
           <tbody>{data}</tbody>
         </table>
-
       </div>
     );
   }
 }
 
-export default comments;
+export default Comment;

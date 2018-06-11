@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import IndexForm from './index_comment_form.js';
 
-class comments extends Component {
+class Form extends Component {
   state = {
     data: [
       {id:"id",name:"Name", age:"Age",rating:" Rating",comment:"Comment"},
@@ -46,12 +46,12 @@ class comments extends Component {
     return (
       <div className="App">
         <IndexForm className="form"
-          title = "Add your comment about this story"
+          // title = "Add your comment about this story"
           defaultValues = {this.state.current}
           model={[
             {key: "name", label: "Name", props: {required: true}},
             {key: "age",label: "Age", type: "number"},
-            {key: "rating",label: "Your Rating for the story", type: "number", props:{min:0,max:5}},
+            {key: "rating",label: "Your Rating for the story", type: "number", props:{min:0,max:5,required: true}},
             {key: "comment",label: "Your Comment"},
             ]}
           
@@ -67,4 +67,4 @@ class comments extends Component {
   }
 }
 
-export default comments;
+export default Form;

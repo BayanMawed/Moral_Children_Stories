@@ -18,19 +18,11 @@ class App extends Component {
           <Route path="/home/:search?" component={Home}/>    
           <Route path="/story/:title" component={StoryPage}/>
           <Route path="/Category/:name" component={Pageparts}/> 
-          {/* <Route path="/Category/Bravery" component={Pageparts}/>
-          <Route path="/Category/Cooperation" component={Pageparts}/>
-          <Route path="/Category/Generosity" component={Pageparts}/>
-          <Route path="/Category/Humility" component={Pageparts}/>
-          <Route path="/Category/Obedience" component={Pageparts}/>
-          <Route path="/Category/Respect" component={Pageparts}/>
-          <Route path="/Category/Sharing" component={Pageparts}/>
-          <Route path="/Category/Tolerance" component={Pageparts}/> */}
           <Route path="/Addacomment" component={Addacomment}/>
           <Route path="/Addastory" component={Addastory}/>
           <Route path="/Our Aim" component={Ouraim}/>
           <Route path="/Contact Us" component={Contactus}/>
-          <h4> Have A Happy Time With Our Stories</h4> 
+          <h6> Have A Happy Time With Our Stories</h6> 
         </div>
       </Router>
     );

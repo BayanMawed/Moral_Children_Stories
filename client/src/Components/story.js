@@ -5,7 +5,7 @@ const story = ({title,image}) =>
 <div className="column">
     <div className="content">
         <div className="storyimg" style={{backgroundImage:`url(/`+image+`)`}}></div>
-        <h5>{title}</h5>
+        <h3>{title}</h3>
         <Link to={`/story/`+title} id="c">Read</Link>
     </div>
 </div>

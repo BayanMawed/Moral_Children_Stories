@@ -1,21 +1,20 @@
 
 import React from 'react'
 import Page from '../../Components/header_navbar_without_search.js'
-import Form from '../../Components/comment_form.js'
+import Comment from '../../Components/comment_form.js'
 export default () =>
 <Page title="Add Your Comment" mainClassName="addyourcomment" headerImage="images/happyfamily.png">
-    <h1>Add A Comment</h1>
-    <h2> We like to improve our website continuesly, so we are interested in your opinion in our website.<br/>Add your comment down please .</h2> 
+    <h2>Add A Comment</h2>
+    <h4> We like to improve our website continuesly, so we are interested in your opinion in our website.<br/>Add your comment down please .</h4> 
     <div className="row">
         <div className="column">
         <br/>
-        <Form/> 
+        <Comment/> 
         </div>
          <div className="column">
-         <div className="img1">
+         <div className="addacomment">
             </div>
  
     </div> 
     </div> 
  </Page>
-    

@@ -4,7 +4,7 @@
   /* Style the body */
 body {
   margin: 0px;
-  background-color:black;
+  background-color:white;
   padding: 0px 0px; 
 }
 .header {
@@ -13,63 +13,95 @@ body {
   background-position: center;
   background-size: contain;
   width: 100%;
-  height: 400px;
-  margin:0px; 
+  height: 350px;
+  margin-bottom:-7px; 
 } 
 
 h1 {
   padding-top: 0px;
   text-align:center; 
-  color: fuchsia;
-  margin: 0px;
-  word-break: break-all;
- 	text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
-	font: 49px 'ChunkFiveRegular';
+  color: purple;
+  margin: 30px;
+  word-break:break-all;
+ 	/* text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135; */
+	font: 50px 'merriweather';
 }
 h2{
-  text-align: justify;
+  color: purple;
+  text-align: center;
   margin: 40px 40px;
+  font:40px 'merriweather';
  }
  h3{
-  text-align: justify;
-  font-size: 20px;
-  margin:15px;
+  text-align:center; 
+  /* padding:20px; */
+  font: 25px 'merriweather';
 }
 h4{
-  text-align:center; 
-  color: fuchsia;
-  margin: 0px;
+  text-align:justify; 
+  color: black;
+  margin:15px;
+  font: 25px 'merriweather';
 }
 
 h5{
   text-align: center;
   font-size: 20px;
   margin:20px;
+  font: 15px 'merriweather';
+}
+h6{
+  text-align:center; 
+  color:purple;
+  margin: 10px;
+  font: 20px 'merriweather';
 }
 p{
 text-align: center;
 font-size: 20px;
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font: 15px 'merriweather';
 }
 
 
   /* Style the top navigation bar */
 .navbar {
   overflow: hidden;
-  background-color: black;
-  font-size: 20px;
+  background-color: whitesmoke;
+  font:  bold 20px 'minion';
+  margin: 0px 2px;
 }
   /* Style the navigation bar links */
-#b {
+ #b {
+    float: left;
+    color:black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    border: 1px solid purple;
+    border-right: 0px solid purple;
+    width:225px;
+ }
+    #b2 {
+      float: left;
+      color:black;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      border: 1px solid purple;
+      width:225px;
+      }   
+    
+#b1 {
   float: left;
   /* display: block; */
-  color:fuchsia;
+  color:black;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
-  border: 1px solid fuchsia;
-  width:226px;
-}
+  border: 1px solid purple;
+  border-top: 0px solid purple;
+  width:225px;
+ }
   /* Change color on hover */
 #b:hover {
   background-color:purple;
@@ -79,18 +111,19 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 .dropdown {
   float: left;
   overflow: hidden;
-  }
+}
 
-.dropdown .dropbtn {
-  font-size: 20px;    
-  border: 1px solid fuchsia;
-  color:fuchsia;
-  padding: 14px 16px;
-  margin:14px 16px;
-  background-color: black;
+ .dropbtn {
+  font:  bold 20px 'minion';  
+  border: 1px solid purple;
+  border-right: 0px solid purple;
+  color:black;
+  padding: 14px 20px;
+  /* margin:14px 16px; */
+  background-color: whitesmoke;
   font-family: inherit;
   margin: 0;
-  width:226px;
+  width:225px;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
@@ -101,9 +134,9 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display: none;
   font-size: 15px;
   position: absolute;
-  background-color: black;
+  background-color: whitesmoke;
   /* min-width: 160px; */
-  width: 226px;
+  width: 225px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -115,14 +148,14 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-repeat: no-repeat;
   background-position:left; 
   background-size:contain;
-  width: 678px;
+  width: 676px;
   box-sizing: border-box;
-  border: 1px solid fuchsia;
-  border-top: 0px solid fuchsia;
-  color:fuchsia;
-  background-color: black;
-  padding: 12px 50px;
-  font-size: 20px;
+  border: 1px solid purple;
+  border-top: 0px solid purple;
+  color:black;
+  background-color: whitesmoke;
+  padding: 14px 50px;
+  font:  bold 20px 'minion';
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
@@ -170,28 +203,30 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }   
 
 #a {
-  color:fuchsia;
+  color:purple;
   text-align: center;
   padding: 20px 20px;
   text-decoration: none;
-  background-color:black;
+  background-color:whitesmoke;
+  border: 1px solid purple;
   cursor: pointer;
   width: 300px;
-  font-size: 20px;
+  font:  bold 20px 'minion';
   display: inline-block;
 }
 #c {
   /* display: block; */
-  color:fuchsia;
+  color:black;
   text-align: center;
   padding: 15px 50px;
+  border: 1px solid purple;
   text-decoration: none;
-  background-color:black;
+  background-color:whitesmoke;
   cursor: pointer;
-  font-family: inherit;
-  font-size: 20px;
+  font:  bold 20px 'minion';
+  margin-left: 20px;
 }
-/* images in category_Page */
+/* imag;es in category_Page */
 .storyimg{
   background-repeat: no-repeat;
   background-position: center;
@@ -218,10 +253,23 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
               /* float: none; */
               width: 25%;
               margin-left: 37%;
+              border: 1px solid purple;
+              border-bottom: 0px solid purple;
               margin-top: 0px;
                      
             }
         }
+@media screen and (max-width: 1365px) {
+          #b2 {
+               /* float: none; */
+               width: 25%;
+               margin-left: 37%;
+               border: 1px solid purple;
+               border-bottom: 0px solid purple;
+               margin-top: 0px;
+                      
+             }
+         }
 @media screen and (max-width: 1365px) {
         .dropdown  {
               display :none;
@@ -231,7 +279,8 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
          .searchbar{
               /* float: none; */
               width: 25%;
-              margin-left: 37%
+              margin-left: 37%;
+              border: 1px solid purple;
               }
         }
 
@@ -248,24 +297,18 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 @media screen and (max-width: 1200px) {
           .header {
-              text-align: center;
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size: contain;
-              width: 100%;
-              height: 300px;
-              margin:0px;
-              padding: 0px; 
+              height: 250px;
+              
                 } 
             }
  @media screen and (max-width: 900px) {
               .header {
-               height: 250px;                    
+               height: 150px;                    
                 }
               }
 @media screen and (max-width: 600px) {
            .header {
-              height:150px;
+              height:100px;
                 } 
             }
        
