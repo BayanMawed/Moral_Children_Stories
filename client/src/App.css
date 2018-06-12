@@ -103,9 +103,9 @@ font: 15px 'merriweather';
   width:225px;
  }
   /* Change color on hover */
-#b:hover {
-  background-color:purple;
-} 
+/* #b:hover {
+  background-color:#aa46b0;
+}  */
 /* from here menu*/
 
 .dropdown {
@@ -127,7 +127,7 @@ font: 15px 'merriweather';
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: purple
+  background-color: #aa46b0;
 }
 
 .dropdown-content {
@@ -160,9 +160,9 @@ font: 15px 'merriweather';
   transition: width 0.4s ease-in-out;
 }
 
-.searchbar:focus {
+/* .searchbar:focus {
   width:100%;
-}
+} */
 
 /* Style the main */
 .main {   
@@ -265,7 +265,7 @@ font: 15px 'merriweather';
                width: 25%;
                margin-left: 37%;
                border: 1px solid purple;
-               border-bottom: 0px solid purple;
+               border-bottom: 1px solid purple;
                margin-top: 0px;
                       
              }

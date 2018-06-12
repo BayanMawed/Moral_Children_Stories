@@ -13,7 +13,7 @@ const Page = ({title,mainClassName,headerImage,children,onChange,search}) =>
         <div className="navbar">
             <Link to="/" id="b">Home</Link>
             <div className="dropdown">
-                <button className="dropbtn">Values Stories</button>
+                <button className="dropbtn"> Categories</button>
                 <div className="dropdown-content">
                     <Link to="/Category/Bravery" id="b1">Bravery Stories</Link>
                     <Link to="/Category/Cooperation" id="b1">Cooperation Stories</Link>
@@ -25,8 +25,8 @@ const Page = ({title,mainClassName,headerImage,children,onChange,search}) =>
                     <Link to="/Category/Tolerance" id="b1">Tolerance Stories</Link>
                 </div> 
              </div> 
-            <Link to="/Addacomment" id="b">Add A Comment</Link>
             <Link to="/Addastory" id="b">Add A Story</Link>
+            <Link to="/Addacomment" id="b">Testimonial</Link>
             <Link to="/Our Aim" id="b">Our Aim</Link>
             <Link to="/Contact Us" id="b2">Contact Us</Link>
             <form >

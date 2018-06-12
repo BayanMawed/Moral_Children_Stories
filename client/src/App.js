@@ -18,8 +18,8 @@ class App extends Component {
           <Route path="/home/:search?" component={Home}/>    
           <Route path="/story/:title" component={StoryPage}/>
           <Route path="/Category/:name" component={Pageparts}/> 
-          <Route path="/Addacomment" component={Addacomment}/>
           <Route path="/Addastory" component={Addastory}/>
+          <Route path="/Addacomment" component={Addacomment}/>
           <Route path="/Our Aim" component={Ouraim}/>
           <Route path="/Contact Us" component={Contactus}/>
           <h6> Have A Happy Time With Our Stories</h6> 

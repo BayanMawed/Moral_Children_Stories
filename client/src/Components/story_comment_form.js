@@ -4,7 +4,7 @@ import IndexForm from './index_comment_form.js';
 class Form extends Component {
   state = {
     data: [
-      {id:"id",name:"Name", age:"Age",rating:" Rating",comment:"Comment"},
+      // {id:"id",name:"Name", age:"Age",rating:" Rating",comment:"Comment"},
     
     ],
     current: {}
