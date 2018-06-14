@@ -4,10 +4,10 @@ import IndexForm from './index_comment_form.js';
 class Comment extends Component {
   state = {
     data: [
-      {id:"id",name:"Nagham Ramadan", age:"25",rating:" *****",comment:"This website Stories That Matter could change teaching moral values to the children from a challenging task into afun activity.Thank you very much"},
-       {id:"id",name:"Souad ALi", age:"23",rating:" *****",comment:" Moral stories create opportunities for children to learn meaningful lessons as well as in achieving broader learning, where they can show compassion and empathy to one another and at the same time be part of a community, creating positive change .This website Stories That Matter could change teaching moral values to the children from a challenging task into afun activity.Thank you very muc"},
-       {id:"id",name:"Mitza Haddad", age:"35",rating:" *****",comment:"This website Stories That Matter could change teaching moral values to the children from a challenging task into afun activity.Thank you very much"},
-       {id:"id",name:"Mari Teriz", age:"21",rating:" *****",comment:" Moral stories create opportunities for children to learn meaningful lessons as well as in achieving broader learning, where they can show compassion and empathy to one another and at the same time be part of a community, creating positive change .This website Stories That Matter could change teaching moral values to the children from a challenging task into afun activity.Thank you very muc"},
+      {id:"id",name:"Nagham Ramadan", age:"25 years",rating:" *****",comment:"This website Stories That Matter could change teaching moral values to the children from a challenging task into afun activity.Thank you very much"},
+       {id:"id",name:"Souad ALi", age:"23 years",rating:" ****",comment:" Moral stories create opportunities for children to learn meaningful lessons as well as in achieving broader learning, where they can show compassion and empathy to one another and at the same time be part of a community, creating positive change .This website Stories That Matter could change teaching moral values to the children from a challenging task into afun activity.Thank you very muc"},
+       {id:"id",name:"Mitza Haddad", age:"35 years",rating:" ****",comment:"This website Stories That Matter could change teaching moral values to the children from a challenging task into afun activity.Thank you very much"},
+       {id:"id",name:"Mari Teriz", age:"21 years",rating:" *****",comment:" Moral stories create opportunities for children to learn meaningful lessons as well as in achieving broader learning, where they can show compassion and empathy to one another and at the same time be part of a community, creating positive change .This website Stories That Matter could change teaching moral values to the children from a challenging task into afun activity.Thank you very muc"},
    
       ],
     current: {}
@@ -54,8 +54,8 @@ class Comment extends Component {
           model={[
             {key: "name", label: "Full Name", props: {required: true}},
             {key: "age",label: "Age", type: "number"},
-            {key: "rating",label: "Your Rating for the website", type: "number", props:{min:0,max:5,required: true}},
-            {key: "comment",label: "Your opinion"},
+            {key: "rating",label: "Your rating for the website", type: "number", props:{min:0,max:5,required: true}},
+            {key: "comment",label: "Your evaluation"},
             ]}
           
           onSubmit = {(model) => {this.onSubmit(model)}} 

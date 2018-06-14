@@ -15,7 +15,7 @@ export default class Page extends React.Component{
     }
     getOne(url){
         this.setState({name:url, loading:true})
-        const path = 'http://localhost:3001/Category/'+url
+        const path = 'http://localhost:3075/Category/'+url
         
         fetch(path)
             .then( response => response.json() )
@@ -28,7 +28,7 @@ export default class Page extends React.Component{
                 setTimeout(
                     ()=>
                     this.setState(newState)
-                ,1000)
+                ,500)
             })
     }
     componentDidMount(){
@@ -49,7 +49,7 @@ export default class Page extends React.Component{
             return <div>{this.state.error}</div>
         }
         if(this.state.loading){
-            return  <div className="imageloading" style={{backgroundImage:`url("/images/loading1.gif")`}}></div>
+            return  <div className="imageloading" style={{backgroundImage:`url("/images/loading.gif")`}}></div>
         }
        
         return <Pageparts {...this.state}  />

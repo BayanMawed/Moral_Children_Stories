@@ -1,7 +1,6 @@
 import React from 'react'
 import StoryPage from './story_page'
 
-
 export default class Page extends React.Component{
     state = {
         story:{
@@ -15,7 +14,7 @@ export default class Page extends React.Component{
     }
     getOne(url){
 
-        const path = 'http://localhost:3001/story/'+url
+        const path = 'http://localhost:3075/story/'+url
         
         fetch(path)
             .then( response => response.json() )
@@ -30,7 +29,7 @@ export default class Page extends React.Component{
                 setTimeout(
                     ()=>
                     this.setState(newState)
-                ,1000)
+                ,500)
             })
     }
                 
@@ -40,7 +39,7 @@ export default class Page extends React.Component{
     }
     render(){
         if(this.state.loading){
-            return  <div className="imageloading" style={{backgroundImage:`url("/images/loading1.gif")`}}></div>
+            return  <div className="imageloading" style={{backgroundImage:`url("/images/loading.gif")`}}></div>
         }
         if(this.state.error){
             return <div>{this.state.error}</div>

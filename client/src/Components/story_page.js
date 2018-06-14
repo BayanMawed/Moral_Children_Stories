@@ -3,6 +3,7 @@ import './story_page.css'
 import Page from './header_navbar_without_search.js'
 // import { Link } from 'react-router-dom'
 import Comment from './story_comment_form.js'
+import ReactMarkdown from 'react-markdown'
 
 const StoryPage = ({loading,title,description,headerImage,image1,image2,image3}) =>
     <Page title={title}  mainClassName="storypage" headerImage={headerImage}>
@@ -12,7 +13,7 @@ const StoryPage = ({loading,title,description,headerImage,image1,image2,image3})
         <div className="row">
             {/* <div className="column"> */}
             <div className="story">
-                <h4>{description}</h4> 
+                <ReactMarkdown source={description} />
                 {/* </div> */}
             </div>
             {/* <div className="column"> */}

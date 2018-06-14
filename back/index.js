@@ -52,7 +52,7 @@ app.all('/api/form', (req, res) => {
     })
 })
 
-const PORT = process.env.PORT || 3001
+const PORT = process.env.PORT || 3075
 app.listen(PORT, () => {
     console.log(`server listening on port ${PORT}`)
 })
@@ -100,14 +100,3 @@ app.get('/Category/:name',( req, res)=>{
 
 
 
-
-
-
-
-// app.post('/quotes', (req, res) => {
-//     db.collection('quotes').save(req.body, (err, result) => {
-//       if (err) return console.log(err)
-//       console.log('saved to database')
-//       res.redirect('/')
-//     })
-//   })
