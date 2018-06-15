@@ -60,6 +60,11 @@ p{
 text-align:justify;
 font: 20px 'merriweather';
 }
+p1{
+  text-align:justify;
+  font: 20px 'merriweather';
+  font-weight: bold;
+  }
 
 
   /* Style the top navigation bar */
