@@ -4,10 +4,10 @@ import IndexForm from './index_comment_form.js';
 class Comment extends Component {
   state = {
     data: [
-       {id:"id",name:"Nagham Ramadan", age:"teacher",rating:"",comment:"This website Stories That Matter could change teaching moral values to the children from a challenging task into afun activity."},
-       {id:"id",name:"Souad Ali", age:"mother",rating:" ",comment:" This website Stories That Matter could change teaching moral values to the children from a challenging task into afun activity."},
-       {id:"id",name:"Mitza Haddad", age:"teacher",rating:" ",comment:"This website Stories That Matter could change teaching moral values to the children from a challenging task into afun activity."},
-       {id:"id",name:"Mari Teriz", age:"babysitter",rating:" ",comment:" Moral stories create opportunities for children to learn meaningful lessons as well as in achieving broader learning, where they can show compassion and empathy to one another and at the same time be part of a community, creating positive change .This website Stories."},
+       {id:"id",name:"Nagham Ramadan", work:"teacher",rating:"",comment:"This website Stories That Matter could change teaching moral values to the children from a challenging task into a fun activity."},
+       {id:"id",name:"Souad Ali", work:"mother",rating:" ",comment:"  Moral stories create opportunities for children to learn meaningful lessons."},
+       {id:"id",name:"Mitza Haddad", work:"teacher",rating:" ",comment:"This website Stories That Matter could change teaching moral values to the children from a challenging task into a fun activity."},
+       {id:"id",name:"Mari Teriz", work:"babysitter",rating:" ",comment:" Moral stories create opportunities for children to learn meaningful lessons as well as in achieving broader learning, where they can show compassion and empathy to one another and at the same time be part of a community, creating positive change."},
        
       ],
     current: {}
@@ -38,8 +38,8 @@ class Comment extends Component {
       return (
         <div key={d.id} id='field'>
             <div >
-             <p1>{d.name}, {d.age}</p1>
-              {d.rating}
+             <p1>{d.name}, {d.work}</p1>
+              {/* {d.rating} */}
               <p>{d.comment}</p>
              </div>
             {/* <td><button onClick={()=>{this.onEdit(d.id)}}>edit</button></td> */}
@@ -59,7 +59,7 @@ class Comment extends Component {
           defaultValues = {this.state.current}
           model={[
             {key: "name", label: "Full Name", props: {required: true}},
-            {key: "age",label: "Age", type: "number"},
+            {key: "work",label: "Work", type: "text"},
             {key: "rating",label: "Your rating for the website", type: "number", props:{min:0,max:5,required: true}},
             {key: "comment",label: "Your evaluation"},
             ]}
